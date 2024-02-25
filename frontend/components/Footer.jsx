@@ -35,39 +35,39 @@ const Footer = () => {
       </Wrapper>
       <Wrapper className="flex justify-center mt-10 flex-col md:max-lg:flex-row gap-[10px] md:gap-0 items-center">
         {/* LEFT START */}
-        <div className="mb-[20px] flex gap-10">
+        <div className="mb-[20px] flex gap-10 xs:max-md:flex-col xs:max-md:gap-2">
           <Link
             href="/terms"
-            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left"
+            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left xs:max-md:text-[15px]"
           >
             Terms and Conditions
           </Link>
           <Link
             href="/privacy"
-            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left"
+            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left xs:max-md:text-[15px]"
           >
             Privacy Policy
           </Link>
           <Link
             href="/refund"
-            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left"
+            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left xs:max-md:text-[15px]"
           >
             Refund Policy
           </Link>
           <Link
             href="/support"
-            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left"
+            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left xs:max-md:text-[15px]"
           >
             Customer Support
           </Link>
           <Link
             href="/shipping"
-            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left"
+            className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left xs:max-md:text-[15px]"
           >
             Shipping Policy
           </Link>
         </div>
-        <div className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left">
+        <div className="text-[20px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left xs:max-md:text-[18px]">
           © 2023 Undiscovered, Inc. All Rights Reserved
         </div>
         {/* LEFT END */}
