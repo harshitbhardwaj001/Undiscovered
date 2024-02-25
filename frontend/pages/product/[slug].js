@@ -9,9 +9,9 @@ import ReactMarkdown from "react-markdown";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "@/store/cartSlice";
 
-import jacket from "../../public/Jackets.jpg";
-import hoodie from "../../public/Hoodie.jpg";
-import sweatshirt from "../../public/sweatshirt.jpg";
+// import jacket from "/Jackets.jpg";
+// import hoodie from "/Hoodie.jpg";
+// import sweatshirt from "/sweatshirt.jpg";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -105,14 +105,26 @@ const ProductDetails = ({ product, products }) => {
                     {hover &&
                       (p.categories.data[0].attributes.name === "Jackets" ? (
                         <Image
-                          src={jacket}
+                          src="/Jackets.jpg"
                           alt="Jacket"
+                          width={1000}
+                          height={1000}
                           className="w-[200px] md:w-[400px]"
                         />
                       ) : p.categories.data[0].attributes.name === "Hoodie" ? (
-                        <Image src={hoodie} alt="Hoodie" />
+                        <Image
+                          src="/Hoodie.jpg"
+                          width={1000}
+                          height={1000}
+                          alt="Hoodie"
+                        />
                       ) : (
-                        <Image src={sweatshirt} alt="Sweatshirt" />
+                        <Image
+                          src="/sweatshirt.jpg"
+                          width={1000}
+                          height={1000}
+                          alt="Sweatshirt"
+                        />
                       ))}
                   </div>
                 </div>
